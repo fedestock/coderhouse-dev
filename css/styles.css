@@ -56,7 +56,7 @@ main section.hero {
     justify-content: end;
     align-items: center;
     min-height: 802px;
-    background-image: url('./img/kidcoding-hero.jpg');
+    background-image: url('../img/kidcoding-hero.jpg');
     background-repeat: no-repeat;
     background-size: 1000px;
     background-position: center;
@@ -176,7 +176,7 @@ footer {
     align-items: center;
     text-align: center;
     color: #0D131F;
-    background-image: url(./img/kidcoding-envelope.webp);
+    background-image: url(../img/kidcoding-envelope.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 1500px;
