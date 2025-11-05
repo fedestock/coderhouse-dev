@@ -83,9 +83,8 @@ main section.hero {
 
 /* estilos del portfolio */
 .portfolio {
-    min-height: 900px;
-    background-color: #04020D;
-    position: relative;
+    min-height: 720px;
+    background: linear-gradient(180deg, #04020D 0%, #0D131F 100%);
     height: 100vh;
     align-content: center;
     text-align: center;
@@ -96,18 +95,23 @@ main section.hero {
     width: 100%;
     text-align: center;
     color: #95ED6E;
-    font-size: 28px;
-    line-height: 28px;
+    font-size: 21px;
+    line-height: 21px;
 }
 
 /* borrar estilos de lista */
+.portfolio ul {
+    margin: 0;
+    padding: 0;
+}
+
 .portfolio ul li {
     list-style: none;
 }
 
 /* estilos de los links del portfolio */
 .portfolio ul li a {
-    font-size: 55px;
+    font-size: 34px;
     color: #E6ECDF;
     text-decoration: none;
 }
@@ -119,10 +123,9 @@ section.toolkit {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 900px;
+    min-height: 512px;
     padding: 16px;
     background-color: #0D131F;
-    position: relative;
     height: 100vh;
     align-content: center;
     text-align: center;
@@ -169,7 +172,6 @@ div.toolkit-logos img {
 
 /* estilos del footer */
 footer {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -180,7 +182,11 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 1500px;
+    padding: 84px 0;
+    position: relative;
+    width: 100%;
 }
+
 
 footer h2 {
     font-size: 55px;
@@ -297,16 +303,11 @@ footer p.foot {
     }
 }
 
-
-
-
-
-
 /* estilos bio page */
 
 /* main*/
 main.bio {
-    height: 100vh;
+    min-height: 100vh;
     align-content: center;
     text-align: center;
 }
@@ -318,6 +319,7 @@ main.bio {
 
 /* estilo de imagen bio */
 main.bio img {
+    padding-top: 84px;
     width: 333px;
     border-radius: 555px;
 }
@@ -383,7 +385,7 @@ main.bio p {
 @media (min-width: 1025px) {
 
     /* estilo de imagen bio */
-     main.bio {
+    main.bio {
         height: 100vh;
         display: flex;
         flex-direction: column;
@@ -487,11 +489,12 @@ section.work ul {
 
 /* FAQs section*/
 h2.faqs {
-    padding-top: 55px;
+    padding-top: 84px;
+    padding-left: 16px;
 }
 
 div.accordion {
-    padding-top: 16px;
+    padding: 34px 16px;
 }
 
 /* edicion de boton header de faqs */
@@ -519,10 +522,12 @@ div.accordion {
 
 /* estilos de caja de respuestas de faqs */
 .accordion-body {
+    position: static;
     font-size: 16px;
     line-height: 26px;
     color: white;
     background-color: #04020D;
+    overflow: visible;
 }
 
 /* version tablet work page */
