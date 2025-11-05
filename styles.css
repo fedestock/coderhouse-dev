@@ -1,0 +1,620 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Chivo', sans-serif;
+    background-color: #0D131F;
+    color: white;
+}
+
+
+/* estilos del header */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: right;
+}
+
+/* logo */
+.container img {
+    width: 150px;
+}
+
+/* toggle button */
+.navbar-toggler {
+    background-color: transparent;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* link colors */
+.nav-link {
+    color: white;
+    font-size: 16px;
+}
+
+.nav-link:hover {
+    color: #FFD70C;
+}
+
+.nav-link:active {
+    color: #95ED6E;
+}
+
+
+/* estilos del hero */
+main section.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    min-height: 802px;
+    background-image: url('./img/kidcoding-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    background-position: center;
+    text-align: left;
+}
+
+/* título del hero */
+.hero h1 {
+    font-size: 84px;
+    line-height: 78px;
+    color: #E6ECDF;
+    text-align: center;
+}
+
+/* subtitulo del hero */
+.hero h2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #F9D352;
+    text-align: center;
+    padding-bottom: 21px;
+}
+
+
+/* estilos del portfolio */
+.portfolio {
+    min-height: 900px;
+    background-color: #04020D;
+    position: relative;
+    height: 100vh;
+    align-content: center;
+    text-align: center;
+}
+
+/* estilos de título portfolio */
+.portfolio h2 {
+    width: 100%;
+    text-align: center;
+    color: #95ED6E;
+    font-size: 34px;
+}
+
+/* borrar estilos de lista */
+.portfolio ul li {
+    list-style: none;
+}
+
+/* estilos de los links del portfolio */
+.portfolio ul li a {
+    font-size: 55px;
+    color: #E6ECDF;
+    text-decoration: none;
+}
+
+
+/* estilos de toolkit */
+section.toolkit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 900px;
+    padding: 16px;
+    background-color: #0D131F;
+    position: relative;
+    height: 100vh;
+    align-content: center;
+    text-align: center;
+}
+
+/* estilos de titulo tookit */
+section.toolkit h2 {
+    width: 100%;
+    color: #FC4079;
+    font-size: 34px;
+    text-align: center;
+}
+
+/* estilos de subtitulos toolkit */
+section.toolkit h3 {
+    color: #F9D352;
+    font-size: 21px;
+    text-align: center;
+}
+
+/* descripcion de toolkit */
+.toolkit p {
+    color: #E6ECDF;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* toolkit logos composition */
+div.toolkit-logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+/* toolkit logos edit */
+div.toolkit-logos img {
+    margin-left: 16px;
+    margin-right: 16px;
+    width: 155px;
+    opacity: 0.8;
+}
+
+
+/* estilos del footer */
+footer {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #0D131F;
+    background-image: url(./img/kidcoding-envelope.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1500px;
+}
+
+footer h2 {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 700;
+}
+
+footer a {
+    font-size: 18px;
+    color: #1F2430;
+}
+
+footer p.foot {
+    padding-top: 55px;
+}
+
+
+
+/* estilos tablet de homepage */
+@media (min-width: 768px) {
+
+    /* estilos del hero */
+    main section.hero {
+        background-size: 1000px;
+        min-height: 950px;
+    }
+
+
+    /* título del hero */
+    .hero h1 {
+        font-size: 148px;
+        line-height: 148px;
+    }
+
+    .hero h2 {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    /* estilos de los links del portfolio */
+    .portfolio ul li a {
+        font-size: 55px;
+        color: #E6ECDF;
+        text-decoration: none;
+    }
+
+
+    /* estilos de toolkit */
+    section.toolkit {
+        min-height: 900px;
+    }
+
+    /* toolkit logos edit */
+    div.toolkit-logos img {
+        width: 234px;
+    }
+
+    /* estilos del footer */
+    footer {
+        background-size: 1700px;
+    }
+
+    footer h2 {
+        color: #0D131F;
+        width: 90%;
+        font-size: 84px;
+        line-height: 84px;
+    }
+}
+
+footer p.foot {
+    padding-top: 55px;
+}
+
+
+
+/* estilos laptop de homepage */
+@media (min-width: 1025px) {
+
+    /* estilos del hero */
+    main section.hero {
+        min-height: 100vh;
+        background-size: cover;
+        gap: 0;
+    }
+
+    /* títulos del hero */
+    .hero h1 {
+        font-size: 99px;
+        line-height: 55px;
+    }
+
+    .hero h2 {
+        font-size: 21px;
+        padding-top: 21px;
+        width: 100%;
+    }
+
+    /* estilos de los links del portfolio */
+    .portfolio ul li a {
+        font-size: 84px;
+    }
+
+    /* estilos de toolkit */
+    div.toolkit-logos {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        width: 75%;
+    }
+
+    /* toolkit logos edit */
+    div.toolkit-logos img {
+        width: 184px;
+    }
+}
+
+
+
+
+
+
+/* estilos bio page */
+
+/* main*/
+main.bio {
+    height: 100vh;
+    align-content: center;
+    text-align: center;
+}
+
+/* hero */
+main.bio {
+    padding: 16px;
+}
+
+/* estilo de imagen bio */
+main.bio img {
+    width: 333px;
+    border-radius: 555px;
+}
+
+/* estilos de titulo bio */
+main.bio h1 {
+    padding-top: 16px;
+    font-size: 34px;
+    color: #FFD70C;
+}
+
+/* estilos de descripcion bio */
+main.bio p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.accordion-body a {
+    color: #95ED6E;
+}
+
+
+
+/* estilos tablet de bio page */
+@media (min-width: 768px) {
+
+    main.bio {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* estilo de imagen bio */
+    main.bio img {
+        width: 512px;
+        border-radius: 555px;
+    }
+
+    /* estilos de titulo bio */
+    main.bio h1 {
+        padding-top: 16px;
+        font-size: 34px;
+        color: #FFD70C;
+    }
+
+    /* estilos de descripcion bio */
+    main.bio p {
+        width: 512px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .accordion-body a {
+        color: #95ED6E;
+    }
+}
+
+
+
+/* estilos laptop de biopage */
+@media (min-width: 1025px) {
+
+    /* estilo de imagen bio */
+     main.bio {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+
+
+
+/* estilos de work page */
+
+.work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* hero styles */
+
+.work__hero {
+    padding-top: 34px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.work__hero img {
+    height: 70vh;
+    object-fit: contain;
+}
+
+.work__hero h1 {
+    font-size: 48px;
+    line-height: 45px;
+    color: #95ED6E;
+    text-align: center;
+}
+
+.work__hero p {
+    width: 90%;
+    font-size: 16px;
+    line-height: 26px;
+    color: #E6ECDF;
+    text-align: center;
+}
+
+/* subtitulo work */
+.work h2 {
+    padding-top: 34px;
+    font-size: 34px;
+    color: #FFD70C;
+    text-align: center;
+    margin-top: 34px;
+}
+
+/* header de la tabla */
+main.work th {
+    text-align: left;
+    color: #E6ECDF;
+    font-size: 18px;
+}
+
+/* celdas */
+main.work td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #E6ECDF;
+    font-size: 16px;
+}
+
+/* FAQs */
+section.work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.work h3 {
+    font-size: 34px;
+    color: #FFD70C;
+}
+
+/* descripcion worker */
+section.work p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+/* lista worker */
+section.work ul {
+    list-style: none;
+    text-align: center;
+}
+
+/* FAQs section*/
+h2.faqs {
+    padding-top: 55px;
+}
+
+div.accordion {
+    padding-top: 16px;
+}
+
+/* edicion de boton header de faqs */
+.accordion-button {
+    font-size: 16px;
+    color: #E6ECDF;
+    background-color: #04020D;
+}
+
+.accordion-button:not(.collapsed) {
+    border: 1px solid white;
+    color: white;
+    background-color: #04020D;
+}
+
+.accordion-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.accordion-button::after {
+    filter: brightness(0) invert(1);
+    opacity: 0.8;
+}
+
+/* estilos de caja de respuestas de faqs */
+.accordion-body {
+    font-size: 16px;
+    line-height: 26px;
+    color: white;
+    background-color: #04020D;
+}
+
+/* version tablet work page */
+
+@media (min-width: 768px) {
+    .work {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* hero styles */
+
+    .work__hero {
+        padding-top: 55px;
+    }
+
+    .work__hero img {
+        height: 75vh;
+    }
+
+    .work__hero h1 {
+        font-size: 55px;
+        line-height: 55px;
+    }
+
+    /* subtitulo work */
+    .work h2 {
+        width: 70%;
+        padding-bottom: 16px;
+    }
+
+
+    /* lista worker */
+    section.work ul {
+        list-style: none;
+        text-align: center;
+    }
+
+    /* FAQs section*/
+    h2.faqs {
+        padding-top: 55px;
+        padding-left: 55px;
+    }
+
+    div.accordion {
+        padding: 16px 55px 55px;
+    }
+}
+
+@media (min-width: 1025px) {
+
+    /* hero styles */
+    .work__hero {
+        padding-top: 55px;
+    }
+
+    .work__hero img {
+        height: 75vh;
+    }
+
+    .work__hero h1 {
+        font-size: 55px;
+        line-height: 55px;
+    }
+
+    .work__hero p {
+        width: 100%;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    /* subtitulo work */
+    .work h2 {
+        width: 35%;
+        padding-bottom: 16px;
+    }
+
+
+    /* lista worker */
+    section.work ul {
+        list-style: none;
+        text-align: center;
+    }
+
+    /* FAQs section*/
+    h2.faqs {
+        padding-top: 55px;
+        padding-left: 55px;
+    }
+
+    div.accordion {
+        padding: 16px 55px 55px;
+    }
+}

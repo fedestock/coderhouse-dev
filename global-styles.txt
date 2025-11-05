@@ -1,0 +1,10 @@
+color-palette:
+
+dark01: #0D131F
+dark02: #1F2430
+
+text: #E6ECDF
+
+accent01: #F9D352
+accent02: #FC4079
+accent03: #95ED6E
