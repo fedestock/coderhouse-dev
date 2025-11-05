@@ -65,7 +65,7 @@ main section.hero {
 
 /* título del hero */
 .hero h1 {
-    font-size: 84px;
+    font-size: 72px;
     line-height: 78px;
     color: #E6ECDF;
     text-align: center;
@@ -96,7 +96,8 @@ main section.hero {
     width: 100%;
     text-align: center;
     color: #95ED6E;
-    font-size: 34px;
+    font-size: 28px;
+    line-height: 28px;
 }
 
 /* borrar estilos de lista */
