@@ -1,0 +1,31 @@
+// VARIABLES
+@use "../utilities/variables" as *;
+// MIXIN
+@use "../utilities/mixin" as *;
+
+// hero
+.bio {
+    @include flex($direction: column);
+    padding: 16px;
+
+    img {
+        padding-top: 84px;
+        width: 333px;
+        border-radius: 555px;
+    }
+
+    h1 {
+        @include text($size: 34px, $color: $link-y, $align: center);
+        padding-top: 16px;
+    }
+
+    p {
+        @include text($size: 16px, $color: $link-y, $align: center);
+    }
+}
+
+.accordion-body {
+    a {
+        color: $link-g;
+    }
+}

@@ -6,6 +6,8 @@
 // mq tablet
 @media screen and (min-width: 768px) {
 
+    // HOMEPAGE
+
     // hero
     .hero {
         background-size: 1000px;
@@ -52,5 +54,61 @@
         p.foot {
             padding-top: 55px;
         }
+    }
+
+    // BIO PAGE
+    .bio {
+        @include flex($direction: column);
+        height: 100vh;
+
+        img {
+            width: 512px;
+            border-radius: 555px;
+        }
+
+        h1 {
+            padding-top: 16px;
+            font-size: 34px;
+            color: $link-y;
+        }
+
+        p {
+            width: 512px;
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+
+    // WORKPAGE
+    .work__hero {
+        padding-top: 55px;
+    }
+
+    .work__hero img {
+        height: 75vh;
+    }
+
+    .work__hero h1 {
+        font-size: 55px;
+        line-height: 55px;
+    }
+
+    .work p {
+        width: 50%;
+    }
+
+    .work h2 {
+        width: 50%;
+        padding-bottom: 16px;
+    }
+
+
+    // FAQs section
+    h2.faqs {
+        padding-left: 34px;
+    }
+
+    div.accordion {
+        padding: 16px 34px 55px;
     }
 }

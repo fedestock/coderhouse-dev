@@ -1,0 +1,110 @@
+// VARIABLES
+@use "../utilities/variables" as *;
+// MIXIN
+@use "../utilities/mixin" as *;
+
+// hero
+.work {
+    @include flex($direction: column);
+
+    h2 {
+        @include text($size: 34px, $line: 34px, $color: $link-y, $align: center);
+        margin-top: 34px;
+    }
+}
+
+.work__hero {
+    @include flex($direction: column);
+    padding-top: 34px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    img {
+        height: 70vh;
+        object-fit: contain;
+    }
+
+    h1 {
+        @include text($size: 48px, $line: 45px, $color: $link-g, $align: center);
+    }
+
+    p {
+        @include text($size: 16px, $line: 26px, $color: $light-st, $align: center);
+    }
+}
+
+// estilos de la tabla
+main.work {
+
+    // header
+    th {
+        @include text($size: 18px, $color: $light-st);
+    }
+
+    // celdas
+    td {
+        padding: 14px 16px;
+        border-bottom: 1px solid $light-st;
+        font-size: 16px;
+    }
+}
+
+// FAQS
+section.work {
+    @include flex($direction: column);
+
+    h3 {
+        @include text($size: 34px, $color: $link-y);
+    }
+
+    p {
+        @include text($size: 16px, $line: 26px);
+    }
+
+    ul {
+        list-style: none;
+        text-align: center;
+    }
+}
+
+// faqs area
+h2.faqs {
+    padding-top: 84px;
+    padding-left: 16px;
+}
+
+div.accordion {
+    padding: 34px 16px;
+}
+
+// modificacion de accordion de bs
+.accordion-button {
+    font-size: 16px;
+    color: $light-st;
+    background-color: $dark-st;
+}
+
+.accordion-button:not(.collapsed) {
+    border: 1px solid $light-st;
+    color: $light-st;
+    background-color: $dark-st;
+}
+
+.accordion-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.accordion-button::after {
+    filter: brightness(0) invert(1);
+    opacity: 0.8;
+}
+
+// estilos para la caja de respuestas (FAQS)
+.accordion-body {
+    font-size: 16px;
+    line-height: 26px;
+    color: $light-st;
+    background-color: $dark-st;
+    overflow: visible;
+}

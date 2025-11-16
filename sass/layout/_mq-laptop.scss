@@ -1,0 +1,74 @@
+// VARIABLES
+@use "../utilities/variables" as *;
+// MIXIN
+@use "../utilities/mixin" as *;
+
+// mq laptop
+@media screen and (min-width: 1025px) {
+
+    // HOMEPAGE
+
+    // hero
+    main .hero {
+        min-height: 100vh;
+        background-size: 1285px;
+
+        h1 {
+            font-size: 111px;
+            line-height: 55px;
+        }
+
+        h2 {
+            font-size: 21px;
+            padding-top: 21px;
+            width: 100%;
+        }
+    }
+
+    // portfolio
+    .portfolio ul li a {
+        font-size: 84px;
+    }
+
+    // toolkit
+    .toolkit-logos {
+        @include grid(repeat(3, 1fr), repeat(2, 1fr));
+        width: 75%;
+    }
+
+    // WORKPAGE
+    // hero
+    .work__hero {
+        padding-top: 55px;
+    }
+
+    .work__hero img {
+        height: 75vh;
+    }
+
+    .work__hero h1 {
+        font-size: 55px;
+        line-height: 55px;
+    }
+
+    .work__hero p {
+        width: 100%;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    // titulo de la tabla
+    .work h2 {
+        width: 40%;
+        padding-bottom: 16px;
+    }
+
+    // estilos de las FAQs
+    h2.faqs {
+        padding-left: 84px;
+    }
+
+    div.accordion {
+        padding: 16px 84px 55px;
+    }
+}

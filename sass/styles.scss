@@ -7,6 +7,12 @@
 
 // HOMEPAGE
 @use "./pages/home" as *;
+// BIOPAGE
+@use "./pages/bio" as *;
+// WORKPAGE
+@use "./pages/work" as *;
 
 // TABLET
 @use "./layout/mq-tablet" as *;
+// LAPTOP
+@use "./layout/mq-laptop" as *;
