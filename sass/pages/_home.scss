@@ -1,0 +1,154 @@
+// VARIABLES
+@use "../utilities/variables" as *;
+// MIXIN
+@use "../utilities/mixin" as *;
+
+// header
+.navbar {
+    @include flex($jc: space-between);
+    text-align: right;
+    padding-left: 16px;
+    padding-right: 5px;
+}
+
+/* logo */
+.container img {
+    width: 150px;
+}
+
+/* toggle button */
+.navbar-toggler {
+    background-color: transparent;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* link colors */
+.nav-link {
+    color: $light-st;
+    font-size: 16px;
+    padding-right: 21px;
+
+    &:hover {
+        color: $link-y;
+    }
+
+    &:active {
+        color: $link-g;
+    }
+}
+
+// hero
+main {
+    .hero {
+        @include flex($direction: column, $jc: end);
+        min-height: 720px;
+        background-image: url('../img/kidcoding-hero.jpg');
+        background-size: 1211px;
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: left;
+
+        h1 {
+            @include text($size: 68px, $color: $light-st, $align: center);
+        }
+
+        h2 {
+            @include text($size: 16px, $color: $link-y, $align: center);
+            padding-bottom: 21px;
+        }
+    }
+}
+
+// portfolio
+.portfolio {
+    min-height: 720px;
+    background: linear-gradient(180deg, #04020D 0%, #0D131F 100%);
+    height: 100vh;
+    align-content: center;
+    text-align: center;
+
+    h2 {
+        @include text($size: 21px, $color: $link-g, $align: center);
+        width: 100%;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    ul li a {
+        font-size: 34px;
+        color: $light-st;
+        text-decoration: none;
+    }
+}
+
+// Toolkit
+.toolkit {
+    @include flex($direction: column, $jc: start);
+    min-height: 720px;
+    padding: 16px;
+    background-color: $dark-st;
+    align-content: center;
+    text-align: center;
+
+    h2 {
+        @include text($size: 34px, $color: $link-p, $align: center);
+        width: 100%;
+    }
+
+    h3 {
+        @include text($size: 21px, $color: $link-y, $align: center);
+    }
+
+    p {
+        @include text($size: 16px, $color: $light-st, $align: center);
+    }
+}
+
+.toolkit-logos {
+    @include grid(1fr 1fr, 1fr 1fr 1fr);
+    text-align: center;
+
+    img {
+        margin-left: 16px;
+        margin-right: 16px;
+        width: 155px;
+        opacity: 0.8;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+// footer
+footer {
+    @include flex($direction: column);
+    color: $dark-st;
+    background-image: url(../img/kidcoding-envelope.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1500px;
+    padding: 84px 0;
+    position: relative;
+    width: 100%;
+
+    h2 {
+        @include text ($size: 55px, $line: 55px, $align: center, $weight: 700)
+    }
+
+    a {
+        @include text ($size: 18px, $line: 55px, $color: $dark-nd, $align: center)
+    }
+
+    p.foot {
+        padding-top: 55px;
+    }
+}

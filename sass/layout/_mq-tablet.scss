@@ -1,0 +1,56 @@
+// VARIABLES
+@use "../utilities/variables" as *;
+// MIXIN
+@use "../utilities/mixin" as *;
+
+// mq tablet
+@media screen and (min-width: 768px) {
+
+    // hero
+    .hero {
+        background-size: 1000px;
+        min-height: 950px;
+
+        h1 {
+            font-size: 148px;
+            line-height: 148px;
+        }
+
+        h2 {
+            font-size: 18px;
+            line-height: 21px;
+        }
+    }
+
+    // portolio
+    .portfolio ul li a {
+        font-size: 55px;
+        color: $light-st;
+        text-decoration: none;
+    }
+
+    // toolkit
+    .toolkit {
+        min-height: 900px;
+    }
+
+    .toolkit-logos img {
+        width: 234px;
+    }
+
+    // footer
+    footer {
+        background-size: 1700px;
+
+        h2 {
+            color: $dark-st;
+            width: 90%;
+            font-size: 84px;
+            line-height: 84px;
+        }
+
+        p.foot {
+            padding-top: 55px;
+        }
+    }
+}

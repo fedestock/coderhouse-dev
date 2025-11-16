@@ -1,0 +1,23 @@
+// flexbox
+@mixin flex($direction: row, $jc: center, $ai: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+// grid
+@mixin grid($columns, $rows: auto) {
+  display: grid;
+  grid-template-columns: $columns;
+  grid-template-rows: $rows;
+}
+
+// text
+@mixin text($size, $line: 1.2, $color: inherit, $align: left, $weight: normal) {
+  font-size: $size;
+  line-height: $line;
+  color: $color;
+  text-align: $align;
+  font-weight: $weight;
+}
