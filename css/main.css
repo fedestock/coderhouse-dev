@@ -477,10 +477,10 @@ div.accordion {
 @media screen and (min-width: 1025px) {
   main .hero {
     min-height: 100vh;
-    background-size: 1285px;
+    background-size: cover;
   }
   main .hero h1 {
-    font-size: 111px;
+    font-size: 84px;
     line-height: 55px;
   }
   main .hero h2 {
