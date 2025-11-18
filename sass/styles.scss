@@ -1,18 +1,18 @@
 // RESET
-@use "./base/reset" as *;
+@use "./base/reset";
 // VARIABLES
-@use "./utilities/variables" as *;
+@use "./utilities/variables";
 // MIXIN
-@use "./utilities/mixin" as *;
+@use "./utilities/mixin";
 
 // HOMEPAGE
-@use "./pages/home" as *;
+@use "./pages/home";
 // BIOPAGE
-@use "./pages/bio" as *;
+@use "./pages/bio";
 // WORKPAGE
-@use "./pages/work" as *;
+@use "./pages/work";
 
 // TABLET
-@use "./layout/mq-tablet" as *;
+@use "./layout/mq-tablet";
 // LAPTOP
-@use "./layout/mq-laptop" as *;
+@use "./layout/mq-laptop";

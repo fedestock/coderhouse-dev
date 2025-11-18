@@ -62,10 +62,44 @@ main {
     }
 }
 
+.motiongrid-bg {
+    position: relative;
+    overflow: hidden;
+}
+
+.motiongrid-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.08)1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: scrollGrid 2s linear infinite;
+    z-index: 0;
+}
+
+.motiongrid-bg {
+    position: relative;
+    z-index: 1;
+}
+
+/*animacion*/
+@keyframes scrollGrid {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 -50px;
+    }
+}
+
 // portfolio
-.portfolio {
-    min-height: 720px;
-    background: linear-gradient(180deg, #04020D 0%, #0D131F 100%);
+#portfolio {
+    background: linear-gradient(180deg, $dark-st 100%, $dark-st 0%);
     height: 100vh;
     align-content: center;
     text-align: center;
@@ -76,8 +110,7 @@ main {
     }
 
     ul {
-        margin: 0;
-        padding: 0;
+        margin: 25px;
     }
 
     ul li {
@@ -128,27 +161,64 @@ main {
     }
 }
 
+
 // footer
-footer {
-    @include flex($direction: column);
-    color: $dark-st;
-    background-image: url(../img/kidcoding-envelope.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 1500px;
-    padding: 84px 0;
-    position: relative;
-    width: 100%;
+.footer {
+    padding-top: 34px;
+    color: $light-st;
+    background-color: black;
+    font-size: 14px;
+    padding-bottom: 50px;
 
-    h2 {
-        @include text ($size: 55px, $line: 55px, $align: center, $weight: 700)
+    .logo img {
+        width: 150px;
     }
 
-    a {
-        @include text ($size: 18px, $line: 55px, $color: $dark-nd, $align: center)
+    .social-links a {
+        @include flex;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-size: 16px;
+        color: $link-g;
+        margin-right: 10px;
+        transition: 0.3s;
+
+        &:hover {
+            color: $link-y;
+        }
     }
 
-    p.foot {
-        padding-top: 55px;
+    h4 {
+        @include text($size: 21px, $color: $light-st);
+        margin-bottom: 16px;
+    }
+
+    .footer-links {
+        margin-bottom: 30px;
+
+        ul {
+            list-style: none;
+
+            a {
+                color: $link-y;
+
+                &:hover {
+                    color: $link-p;
+                }
+            }
+        }
+    }
+
+    .footer-contact {
+        background-color: $dark-st;
+        border-radius: 7px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .copyright {
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
 }
