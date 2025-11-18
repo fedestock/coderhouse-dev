@@ -9,19 +9,21 @@
     // HOMEPAGE
 
     // hero
-    main .hero {
-        min-height: 100vh;
-        background-size: cover;
+    main {
+        .hero {
+            height: 100vh;
+            background-size: cover;
 
-        h1 {
-            font-size: 84px;
-            line-height: 55px;
-        }
+            h1 {
+                font-size: 84px;
+                line-height: 55px;
+            }
 
-        h2 {
-            font-size: 21px;
-            padding-top: 21px;
-            width: 100%;
+            h2 {
+                font-size: 21px;
+                padding-top: 21px;
+                width: 100%;
+            }
         }
     }
 
