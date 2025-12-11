@@ -111,6 +111,7 @@ main {
 
     ul {
         margin: 25px;
+        padding: 0px;
     }
 
     ul li {
@@ -168,24 +169,30 @@ main {
     color: $light-st;
     background-color: black;
     font-size: 14px;
-    padding-bottom: 50px;
 
-    .logo img {
-        width: 150px;
+    .top-foot {
+        text-align: center;
+
+        img {
+            width: 150px;
+        }
     }
 
-    .social-links a {
-        @include flex;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        font-size: 16px;
-        color: $link-g;
-        margin-right: 10px;
-        transition: 0.3s;
+    .media-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
 
-        &:hover {
-            color: $link-y;
+        a {
+            height: 85px;
+            width: 85px;
+            color: $link-g;
+
+            &:hover {
+                color: $link-y;
+            }
         }
     }
 
@@ -194,11 +201,17 @@ main {
         margin-bottom: 16px;
     }
 
-    .footer-links {
+    .mylinks {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         margin-bottom: 30px;
 
         ul {
             list-style: none;
+            padding: 0px;
 
             a {
                 color: $link-y;
@@ -210,14 +223,15 @@ main {
         }
     }
 
-    .footer-contact {
+    .touch-foot {
         background-color: $dark-st;
         border-radius: 7px;
-        padding-top: 16px;
-        padding-bottom: 16px;
+        padding: 16px;
+        margin: 21px;
     }
 
-    .copyright {
+    .copy-foot {
+        text-align: center;
         padding-top: 25px;
         padding-bottom: 25px;
     }

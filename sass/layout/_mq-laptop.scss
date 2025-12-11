@@ -74,3 +74,64 @@
         padding: 16px 84px 55px;
     }
 }
+
+// footer
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 21px 84px;
+
+
+    .top-foot {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        text-align: left;
+        align-items: start;
+
+        .topping {
+            width: 70%;
+
+            .media-links {
+                justify-content: start;
+
+                a {
+                    height: 0;
+                }
+            }
+        }
+
+        .mylinks {
+            align-self: center;
+        }
+
+
+        p {
+            padding: 0px;
+            width: 70%;
+        }
+    }
+
+    .touch-foot {
+        align-self: center;
+        width: 50%;
+    }
+
+    .mylinks {
+        text-align: left;
+        margin: 0;
+        align-items: start;
+    }
+
+    .touch-foot {
+      align-self: left;
+    }
+}
+
+.copy-foot {
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        background-color: black;
+        padding: 34px 0;
+        text-align: center;
+    }

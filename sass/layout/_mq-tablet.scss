@@ -44,18 +44,22 @@
     }
 
     // footer
-    footer {
-        background-size: 1700px;
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
-        h2 {
-            color: $dark-st;
-            width: 90%;
-            font-size: 84px;
-            line-height: 84px;
+        .top-foot {
+            text-align: center;
+            
+            p {
+                padding: 0 217px;
+            }
         }
 
-        p.foot {
-            padding-top: 55px;
+        .touch-foot {
+            align-self: center;
+            width: 50%;
         }
     }
 
