@@ -6,10 +6,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: url('../img/pointer-cursor-kidcoding.png') 1 1, auto;
 }
 
 /* estilos generales */
-body  {
+body {
     font-family: 'Chivo', sans-serif;
     background-color: $dark-st;
     color: $light-st;
