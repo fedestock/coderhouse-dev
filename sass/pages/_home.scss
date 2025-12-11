@@ -165,74 +165,107 @@ main {
 
 // footer
 .footer {
-    padding-top: 34px;
-    color: $light-st;
-    background-color: black;
-    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 55px 16px;
+    gap: 16px;
+    background: linear-gradient(35deg, black, $dark-st);
 
-    .top-foot {
-        text-align: center;
+    // bloque brand
+    &__brand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         img {
             width: 150px;
         }
-    }
 
-    .media-links {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 25px;
-
-        a {
-            height: 85px;
-            width: 85px;
-            color: $link-g;
-
-            &:hover {
-                color: $link-y;
-            }
+        p {
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
         }
-    }
 
-    h4 {
-        @include text($size: 21px, $color: $light-st);
-        margin-bottom: 16px;
-    }
-
-    .mylinks {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin-bottom: 30px;
-
-        ul {
-            list-style: none;
-            padding: 0px;
+        .footer__social {
+            display: flex;
+            justify-content: start;
+            gap: 20px;
 
             a {
-                color: $link-y;
+                font-size: 20px;
+                opacity: 0.8;
+                color: white;
 
                 &:hover {
-                    color: $link-p;
+                    opacity: 1;
                 }
             }
         }
     }
 
-    .touch-foot {
-        background-color: $dark-st;
-        border-radius: 7px;
-        padding: 16px;
-        margin: 21px;
+    // LINKS
+    &__links {
+        width: 100%;
+        text-align: center;
+        color: white;
+
+        h4 {
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                margin-bottom: 10px;
+
+                a {
+                    font-size: 14px;
+                    text-decoration: none;
+                    color: $link-y;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
     }
 
-    .copy-foot {
+    // CONTACT
+    &__contact {
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        padding: 16px 0;
+        border-radius: 16px;
+        width: 100%;
         text-align: center;
-        padding-top: 25px;
-        padding-bottom: 25px;
+        display: block; // evita heredar flex
+        margin: 0 auto; // lo mantiene centrado
+        max-width: 300px; // evita que crezca más del viewport
+
+        h4 {
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 14px;
+            margin: 6px 0;
+        }
     }
+}
+
+.copy-foot {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 16px 0;
+    font-size: 13px;
+    background-color: black;
 }

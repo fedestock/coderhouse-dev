@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  cursor: url("../img/pointer-cursor-kidcoding.png") 1 1, auto;
 }
 
 /* estilos generales */
@@ -11,6 +10,7 @@ body {
   font-family: "Chivo", sans-serif;
   background-color: #0D131F;
   color: #E6ECDF;
+  cursor: url("../img/pointer-cursor-kidcoding.png") 1 1, auto;
 }
 
 .navbar {
@@ -187,68 +187,91 @@ main .hero h2 {
 }
 
 .footer {
-  padding-top: 34px;
-  color: #E6ECDF;
-  background-color: black;
-  font-size: 14px;
-}
-.footer .top-foot {
-  text-align: center;
-}
-.footer .top-foot img {
-  width: 150px;
-}
-.footer .media-links {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 25px;
-}
-.footer .media-links a {
-  height: 85px;
-  width: 85px;
-  color: #95ED6E;
-}
-.footer .media-links a:hover {
-  color: #F9D352;
-}
-.footer h4 {
-  font-size: 21px;
-  line-height: 1.2;
-  color: #E6ECDF;
-  text-align: left;
-  font-weight: normal;
-  margin-bottom: 16px;
-}
-.footer .mylinks {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 55px 16px;
+  gap: 16px;
+  background: linear-gradient(35deg, black, #0D131F);
+}
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__brand img {
+  width: 150px;
+}
+.footer__brand p {
+  font-size: 16px;
+  line-height: 26px;
   text-align: center;
-  margin-bottom: 30px;
 }
-.footer .mylinks ul {
+.footer__brand .footer__social {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+}
+.footer__brand .footer__social a {
+  font-size: 20px;
+  opacity: 0.8;
+  color: white;
+}
+.footer__brand .footer__social a:hover {
+  opacity: 1;
+}
+.footer__links {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+.footer__links h4 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+.footer__links ul {
   list-style: none;
-  padding: 0px;
+  padding: 0;
+  margin: 0;
 }
-.footer .mylinks ul a {
+.footer__links ul li {
+  margin-bottom: 10px;
+}
+.footer__links ul li a {
+  font-size: 14px;
+  text-decoration: none;
   color: #F9D352;
 }
-.footer .mylinks ul a:hover {
-  color: #FC4079;
+.footer__links ul li a:hover {
+  opacity: 1;
 }
-.footer .touch-foot {
-  background-color: #0D131F;
-  border-radius: 7px;
-  padding: 16px;
-  margin: 21px;
-}
-.footer .copy-foot {
+.footer__contact {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 16px 0;
+  border-radius: 16px;
+  width: 100%;
   text-align: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+}
+.footer__contact h4 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+.footer__contact p {
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+.copy-foot {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 16px 0;
+  font-size: 13px;
+  background-color: black;
 }
 
 .bio {
@@ -486,6 +509,24 @@ div.accordion {
   div.accordion {
     padding: 16px 34px 55px;
   }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 55px 16px;
+    gap: 16px;
+    background: linear-gradient(35deg, black, #0D131F);
+  }
+  .footer__brand {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 16px;
+  }
+  .footer__brand p {
+    text-align: left;
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1025px) {
   main .hero {
@@ -535,54 +576,14 @@ div.accordion {
   div.accordion {
     padding: 16px 84px 55px;
   }
-}
-.footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 21px 84px;
-}
-.footer .top-foot {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  text-align: left;
-  align-items: start;
-}
-.footer .top-foot .topping {
-  width: 70%;
-}
-.footer .top-foot .topping .media-links {
-  justify-content: start;
-}
-.footer .top-foot .topping .media-links a {
-  height: 0;
-}
-.footer .top-foot .mylinks {
-  align-self: center;
-}
-.footer .top-foot p {
-  padding: 0px;
-  width: 70%;
-}
-.footer .touch-foot {
-  align-self: center;
-  width: 50%;
-}
-.footer .mylinks {
-  text-align: left;
-  margin: 0;
-  align-items: start;
-}
-.footer .touch-foot {
-  align-self: left;
-}
-
-.copy-foot {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  background-color: black;
-  padding: 34px 0;
-  text-align: center;
+  .footer {
+    padding: 55px 84px;
+  }
+  .footer__brand {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

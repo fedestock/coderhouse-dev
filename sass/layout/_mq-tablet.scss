@@ -51,7 +51,7 @@
 
         .top-foot {
             text-align: center;
-            
+
             p {
                 padding: 0 217px;
             }
@@ -117,5 +117,28 @@
 
     div.accordion {
         padding: 16px 34px 55px;
+    }
+
+    // footer
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 55px 16px;
+        gap: 16px;
+        background: linear-gradient(35deg, black, $dark-st);
+
+        // bloque brand
+        &__brand {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            gap: 16px;
+
+            p {
+                text-align: left;
+                width: 100%;
+            }
+        }
     }
 }
